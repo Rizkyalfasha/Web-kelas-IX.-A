@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas IX.A - SMP Harapan Bangsa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader / Loading Screen -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="logo-animation">
+                <div class="logo-circle">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="loading-text">
+                    <h2>KELAS IX.A</h2>
+                    <p>SMP Harapan Bangsa</p>
+                </div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="loading-percentage">0%</div>
+            </div>
+            <div class="loading-status">Memuat website...</div>
+        </div>
+        <div class="preloader-bg">
+            <div class="floating-icons">
+                <i class="fas fa-book"></i>
+                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-apple-alt"></i>
+                <i class="fas fa-flask"></i>
+                <i class="fas fa-calculator"></i>
+                <i class="fas fa-palette"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <h3>IX.A</h3>
+                    <span>SMP Harapan</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Beranda</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Tentang</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#structure" class="nav-link">
+                        <i class="fas fa-sitemap"></i>
+                        <span>Struktur</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">
+                        <i class="fas fa-images"></i>
+                        <span>Galeri</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kontak</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="animated-bg">
+                <div class="bg-element bg-element-1"></div>
+                <div class="bg-element bg-element-2"></div>
+                <div class="bg-element bg-element-3"></div>
+                <div class="bg-element bg-element-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Selamat Datang</span>
+                        <span class="title-line">di Kelas</span>
+                        <span class="title-line highlight">IX.A</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        SMP Harapan Bangsa - Generasi Cerdas, Berkarakter, dan Berakhlak Mulia
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="32">0</div>
+                            <div class="stat-label">Siswa</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label">Mapel</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="95">0</div>
+                            <div class="stat-label">Rata-rata</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('about')">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Tentang Kelas</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('structure')">
+                        <i class="fas fa-users"></i>
+                        <span>Lihat Struktur</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                    <button class="btn btn-tertiary" onclick="scrollToSection('gallery')">
+                        <i class="fas fa-images"></i>
+                        <span>Galeri Foto</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="hero-image-container">
+                    <div class="image-frame">
+                        <img id="heroImage" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Foto Kelas 9A" class="hero-image medium">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-camera"></i>
+                                <span>Foto Kelas IX.A</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-controls">
+                        <label for="imageSize">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            Ukuran Foto:
+                        </label>
+                        <select id="imageSize" class="image-size-select">
+                            <option value="small">Kecil</option>
+                            <option value="medium" selected>Sedang</option>
+                            <option value="large">Besar</option>
+                            <option value="extra-large">Sangat Besar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Profil Kelas IX.A</h2>
+                <p class="section-subtitle">Mengenal lebih dekat kelas terpilih dengan segudang prestasi</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Wali Kelas</h3>
+                        <h4>Ibu Sarah Wijaya, S.Pd</h4>
+                        <p>Guru Matematika berpengalaman 15 tahun dengan dedikasi tinggi dalam pendidikan</p>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Total Siswa</h3>
+                        <h4>32 Siswa Aktif</h4>
+                        <p>Terdiri dari 16 siswa laki-laki dan 16 siswa perempuan yang berprestasi</p>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ruang Kelas</h3>
+                        <h4>Lantai 2, Ruang A-201</h4>
+                        <p>Dilengkapi dengan fasilitas AC, proyektor, dan papan tulis interaktif</p>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Prestasi</h3>
+                        <h4>Juara Umum</h4>
+                        <p>Meraih berbagai prestasi akademik dan non-akademik tingkat sekolah</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="motto-section" data-aos="zoom-in" data-delay="500">
+                <div class="motto-card">
+                    <div class="motto-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <h3>Motto Kelas</h3>
+                    <h2>"BERSATU KITA TEGUH, BERCERAI KITA RUNTUH"</h2>
+                    <p>Semangat kebersamaan dan solidaritas yang tinggi menjadi kunci kesuksesan kelas IX.A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structure Section -->
+    <section id="structure" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Struktur Organisasi Kelas</h2>
+                <p class="section-subtitle">Pengurus kelas yang solid dan bertanggung jawab</p>
+            </div>
+            
+            <div class="structure-container">
+                <!-- Ketua Kelas -->
+                <div class="structure-card main-leader" data-aos="zoom-in">
+                    <div class="card-bg"></div>
+                    <div class="student-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ahmad Rizky">
+                        <div class="photo-frame"></div>
+                        <div class="crown-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="student-info">
+                        <h3>Ahmad Rizky Pratama</h3>
+                        <div class="position">Ketua Kelas</div>
+                        <p class="description">Memimpin dan mengkoordinasikan seluruh kegiatan kelas dengan penuh tanggung jawab</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/6281234567890" target="_blank" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://tiktok.com/@ahmadrizky9a" target="_blank" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wakil Ketua -->
+                <div class="structure-card" data-aos="fade-right" data-delay="200">
+                    <div class="card-bg"></div>
+                    <div class="student-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Siti Nurhaliza">
+                        <div class="photo-frame"></div>
+                    </div>
+                    <div class="student-info">
+                        <h3>Siti Nurhaliza</h3>
+                        <div class="position">Wakil Ketua Kelas</div>
+                        <p class="description">Membantu ketua kelas dalam menjalankan program-program kelas</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/6281234567891" target="_blank" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://tiktok.com/@sitinur9a" target="_blank" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sekretaris -->
+                <div class="structure-card" data-aos="fade-left" data-delay="300">
+                    <div class="card-bg"></div>
+                    <div class="student-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Budi Santoso">
+                        <div class="photo-frame"></div>
+                    </div>
+                    <div class="student-info">
+                        <h3>Budi Santoso</h3>
+                        <div class="position">Sekretaris</div>
+                        <p class="description">Mencatat dan mendokumentasikan seluruh kegiatan kelas</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/6281234567892" target="_blank" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://tiktok.com/@budisantoso9a" target="_blank" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bendahara -->
+                <div class="structure-card" data-aos="fade-right" data-delay="400">
+                    <div class="card-bg"></div>
+                    <div class="student-photo">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rina Melati">
+                        <div class="photo-frame"></div>
+                    </div>
+                    <div class="student-info">
+                        <h3>Rina Melati</h3>
+                        <div class="position">Bendahara</div>
+                        <p class="description">Mengelola keuangan dan iuran kelas dengan transparan</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/6281234567893" target="_blank" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://tiktok.com/@rinamelati9a" target="_blank" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sie Kebersihan -->
+                <div class="structure-card" data-aos="fade-left" data-delay="500">
+                    <div class="card-bg"></div>
+                    <div class="student-photo">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dani Firmansyah">
+                        <div class="photo-frame"></div>
+                    </div>
+                    <div class="student-info">
+                        <h3>Dani Firmansyah</h3>
+                        <div class="position">Sie Kebersihan</div>
+                        <p class="description">Mengatur jadwal piket dan menjaga kebersihan kelas</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/6281234567894" target="_blank" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://tiktok.com/@danifirman9a" target="_blank" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sie Keamanan -->
+                <div class="structure-card" data-aos="fade-right" data-delay="600">
+                    <div class="card-bg"></div>
+                    <div class="student-photo">
+                        <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Maya Sari">
+                        <div class="photo-frame"></div>
+                    </div>
+                    <div class="student-info">
+                        <h3>Maya Sari</h3>
+                        <div class="position">Sie Keamanan</div>
+                        <p class="description">Menjaga ketertiban dan keamanan lingkungan kelas</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/6281234567895" target="_blank" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://tiktok.com/@mayasari9a" target="_blank" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeri Kegiatan</h2>
+                <p class="section-subtitle">Dokumentasi kegiatan dan prestasi kelas IX.A</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    <span>Semua</span>
+                </button>
+                <button class="filter-btn" data-filter="academic">
+                    <i class="fas fa-book-open"></i>
+                    <span>Akademik</span>
+                </button>
+                <button class="filter-btn" data-filter="extracurricular">
+                    <i class="fas fa-running"></i>
+                    <span>Ekstrakurikuler</span>
+                </button>
+                <button class="filter-btn" data-filter="achievement">
+                    <i class="fas fa-trophy"></i>
+                    <span>Prestasi</span>
+                </button>
+                <button class="filter-btn" data-filter="event">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Acara</span>
+                </button>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="academic" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Diskusi Kelompok">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Diskusi Kelompok</h4>
+                                <p>Pembelajaran interaktif Matematika</p>
+                                <button class="view-btn" onclick="openImageModal(this)">
+                                    <i class="fas fa-eye"></i>
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="academic" data-aos="fade-up" data-delay="100">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Praktikum IPA">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Praktikum IPA</h4>
+                                <p>Eksperimen kimia di laboratorium</p>
+                                <button class="view-btn" onclick="openImageModal(this)">
+                                    <i class="fas fa-eye"></i>
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="extracurricular" data-aos="fade-up" data-delay="200">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Olahraga">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Pertandingan Voli</h4>
+                                <p>Turnamen antar kelas</p>
+                                <button class="view-btn" onclick="openImageModal(this)">
+                                    <i class="fas fa-eye"></i>
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="achievement" data-aos="fade-up" data-delay="300">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Presentasi">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Juara Presentasi</h4>
+                                <p>Lomba presentasi sejarah</p>
+                                <button class="view-btn" onclick="openImageModal(this)">
+                                    <i class="fas fa-eye"></i>
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="event" data-aos="fade-up" data-delay="400">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Perayaan">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Perayaan HUT RI</h4>
+                                <p>Lomba kemerdekaan sekolah</p>
+                                <button class="view-btn" onclick="openImageModal(this)">
+                                    <i class="fas fa-eye"></i>
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="academic" data-aos="fade-up" data-delay="500">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Proyek">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Proyek Sains</h4>
+                                <p>Pembuatan robot sederhana</p>
+                                <button class="view-btn" onclick="openImageModal(this)">
+                                    <i class="fas fa-eye"></i>
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Informasi kontak dan media sosial kelas IX.A</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Alamat Sekolah</h4>
+                            <p>Jl. Pendidikan No. 123<br>Jakarta Selatan, DKI Jakarta</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telepon</h4>
+                            <p>(021) 1234-5678<br>08123456789 (WA)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>kelas9a@smpharapan.sch.id<br>info@smpharapan.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-media" data-aos="fade-left">
+                    <h3>Media Sosial Kelas</h3>
+                    <div class="social-grid">
+                        <a href="#" class="social-card instagram">
+                            <div class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>Instagram</h4>
+                                <p>@kelas9a_smpharapan</p>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="social-card youtube">
+                            <div class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>YouTube</h4>
+                                <p>Kelas 9A SMP Harapan</p>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="social-card whatsapp">
+                            <div class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>WhatsApp</h4>
+                                <p>Grup Kelas 9A</p>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="social-card tiktok">
+                            <div class="social-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>TikTok</h4>
+                                <p>@kelas9a_official</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h3>Kelas IX.A</h3>
+                        <p>SMP Harapan Bangsa</p>
+                        <span>Tahun Ajaran 2024/2025</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#structure">Struktur</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-stats">
+                    <h4>Statistik Kelas</h4>
+                    <div class="mini-stats">
+                        <div class="mini-stat">
+                            <span class="number">32</span>
+                            <span class="label">Siswa</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="number">15</span>
+                            <span class="label">Mapel</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="number">95</span>
+                            <span class="label">Rata-rata</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kelas IX.A SMP Harapan Bangsa. Dibuat dengan <i class="fas fa-heart"></i> untuk keluarga besar kelas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Success Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
